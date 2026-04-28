@@ -1,0 +1,17 @@
+# api/authorizer.yaml
+openapi: 3.0.3
+info:
+  title: Streambear Authorizer API
+  version: 1.0.0
+paths:
+  /authorize/live:
+    post:
+      # ...
+      responses:
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: "common.yaml#/components/schemas/ErrorResponse" # Reference common schema
+        # ...

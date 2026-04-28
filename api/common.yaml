@@ -1,0 +1,15 @@
+# api/common.yaml
+openapi: 3.0.3
+info:
+  title: Streambear Common Types
+  version: 1.0.0
+paths: {} # No paths, just components
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+        message:
+          type: string
